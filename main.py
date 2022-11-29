@@ -8,8 +8,16 @@ new_user.greet()
 
 
 class Admin(User):
-    pass
+    def greet(self):
+        print("Hello Admin " + self.username + "!")
 
+    def doSomethingBossy(self):
+        answer = input("Do you wanna get schwifty? ")
+        print("You answered:" + "\n" + answer)
+
+        print("Yeeeeeah, let's get schwifty!")
 
 bossman = Admin("Bossman", "bossmanPasswordStuff")
 bossman.greet()
+
+bossman.doSomethingBossy()
