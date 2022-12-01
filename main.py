@@ -1,7 +1,7 @@
 from user import User
 
-username: str = "ghostiefloor123"
-password: str = "floofB00f@11"
+username = "ghostiefloof123"
+password = "floofB00f@11"
 new_user = User(username, password)
 
 new_user.greet()
@@ -12,7 +12,7 @@ class Admin(User):
         print("Hello Admin " + self.username + "!")
 
     def doSomethingBossy(self):
-        answer = input("Do you wanna get schwifty? ")
+        answer = input(f"Hey, {username}, do you wanna get schwifty? ")
         print("You answered:" + "\n" + answer)
 
         print("Yeeeeeah, let's get schwifty!")
