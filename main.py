@@ -20,4 +20,13 @@ class Admin(User):
 bossman = Admin("Bossman", "bossmanPasswordStuff")
 bossman.greet()
 
-bossman.doSomethingBossy()
+word = "candybars"
+print(word.find("y"))
+
+print(word.replace("bars", "cane"))
+
+print("bars" in word)
+
+print("BARS" in word)
+
+print("BARS" in word.upper())
